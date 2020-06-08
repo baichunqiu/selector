@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bcq.selector.imageselector.utils.ImageUtil;
-import com.bcq.selector.imageselector.utils.UriUtils;
-import com.bcq.selector.imageselector.utils.VersionUtils;
+import com.bcq.selector.utils.ImageUtil;
+import com.bcq.selector.utils.UriUtils;
+import com.bcq.selector.utils.VersionUtils;
 import com.qunli.gitbase.R;
 
 import java.util.ArrayList;

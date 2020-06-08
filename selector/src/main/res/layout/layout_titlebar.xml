@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/title_bg">
+
+    <FrameLayout
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/btn_back_selector">
+
+        <ImageView
+            android:layout_width="@dimen/title_back_size"
+            android:layout_height="@dimen/title_back_size"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_marginBottom="@dimen/title_margin"
+        android:layout_toRightOf="@+id/btn_back"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_margin"
+        android:layout_toRightOf="@+id/btn_back"
+        android:text="@string/selector_image"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:foreground="@drawable/btn_foreground_selector">
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green_shape"
+            android:gravity="center"
+            android:minWidth="@dimen/title_bar_height"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="4dp"
+            android:text="@string/selector_send"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+</RelativeLayout>

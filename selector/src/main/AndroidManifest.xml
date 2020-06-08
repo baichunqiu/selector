@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bcq.selector.imageselector">
+    package="com.bcq.selector">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -7,20 +7,20 @@
 
     <application>
         <activity
-            android:name="com.bcq.selector.imageselector.ImageSelectorActivity"
+            android:name="com.bcq.selector.ImageSelectorActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name="com.bcq.selector.imageselector.PreviewActivity"
+            android:name="com.bcq.selector.PreviewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
-            android:name="com.bcq.selector.imageselector.ClipImageActivity"
+            android:name="com.bcq.selector.ClipImageActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
         <provider
-            android:name="com.bcq.selector.imageselector.provider.ImageSelectorProvider"
+            android:name="com.bcq.selector.provider.ImageSelectorProvider"
             android:authorities="${applicationId}.imageSelectorProvider"
             android:exported="false"
             android:grantUriPermissions="true">
